@@ -121,7 +121,8 @@
 
 .slider__container {
   height: 100%;
-  /* flex: 0.6 0.6 auto; */
+  /* flex: 0.9 0.6 auto; */
+  flex: 0.6;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -129,9 +130,8 @@
   opacity: 1;
   visibility: visible;
   z-index: var(--zindex);
-  margin-left: 0%;
 
-  /* position: relative; */
+  /* border: 10px solid blue; */
 }
 
 .slider__container.videoOpen {
@@ -154,9 +154,9 @@
   overflow: hidden;
   flex-shrink: 0;
 
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0%;
+  left: 0%; */
 }
 
 .swiper:active {
@@ -170,6 +170,7 @@
   visibility: visible;
   text-align: center;
   transition: ease-in-out 0.5s;
+  margin-left: 10%;
 
   transform-origin: bottom;
   /* border: 10px solid red; */
@@ -210,7 +211,9 @@
 
 .swiper-button-next {
   top: calc(50% + var(--btn--sep) / 2);
+  
   /* top: calc(50% - var(--btn--sep) / 2); */
+  
 }
 
 .swiper-pagination-bullets {
@@ -222,27 +225,25 @@
   height: 100%;
   flex-direction: column;
   display: flex;
+  flex: 0.5;
 
-  width: 75%;
-
-  border: 10px solid yellow;
+  /* border: 10px solid yellow; */
 }
 
 .banner__content--text {
+  --textH: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
   gap: 1rem;
-  padding: 1rem 3rem;
-  padding-top: 3rem;
-  height: 100%;
+  padding: 1rem;
+  height: var(--textH);
 
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
-  margin-right: 4rem;
-  margin-left: 10rem;
+
   z-index: calc(var(--zindex) + 100);
   /* border: 10px solid green; */
 }
@@ -254,7 +255,7 @@
 }
 
 .content--text--title {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--primary--color);
   text-transform: uppercase;
   font-weight: 500;
@@ -262,13 +263,10 @@
 }
 
 .content--text--par {
-  /* text-align: end; */
   text-align: right;
   color: var(--primary--color);
   font-weight: 300;
-  font-size: 2rem;
-  max-width: 100%;
-  width: 80%;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   /* border: 10px solid green; */
 }
@@ -276,7 +274,7 @@
 .content--text--btn {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #fff;
   background-color: var(--primary--color);
   border: 1px solid var(--primary--color);
@@ -294,23 +292,23 @@
 /********style-frameNavigation***/
 .banner__content--frame-video {
   display: flex;
-  align-items: end;
+  /* align-items: start; */
+  justify-content: end;
   z-index: calc(var(--zindex) + 100);
   backdrop-filter: blur(15px);
-  border: 10px solid purple;
-  width: 100%;
+  height: calc(100% - var(--textH));
+
+  /* border: 10px solid purple; */
 }
 
 .frame__container {
   height: 100%;
-  flex: 0.75;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   justify-content: center;
   text-align: center;
-
-  border: 10px solid red;
+  /* border: 10px solid red; */
 }
 
 .frame__services {
@@ -319,10 +317,9 @@
   position: relative;
   gap: 1rem;
   height: 100%;
-  width: 100%;
   justify-content: start;
   z-index: 1500;
-  /* padding: 0 1rem; */
+
   /* border: 10px solid blue; */
 }
 
@@ -340,32 +337,30 @@
 
 .frame__services--title {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 .frame__services--par {
   width: 100%;
-  max-width: 100%;
+  font-size: 0.8rem;
 }
 
 /**style-frame-video*/
 .videoclip__container {
   display: flex;
-  flex:0.37;
+  flex: 0.37;
   align-items: center;
   background-color: var(--primary--color);
   padding: 0;
-  /* justify-content: end; */
   --maxH: 9rem;
 
-  border: 10px solid;
+  /* border: 10px solid; */
 }
 
 .videoclip {
   max-height: var(--maxH);
   object-fit: cover;
-  height: auto;
-  
+  height: calc(100% - var(--textH));
 
   /* border: 10px solid orange; */
 }
@@ -403,27 +398,26 @@
 .watermark {
   text-transform: uppercase;
   line-height: 11rem;
-  font-size: 8rem;
   letter-spacing: 0.125rem;
   color: var(--primary--color);
   opacity: 0.15;
   z-index: -1;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(-90deg);
   font-family: var(--font);
-  position: absolute;
 }
 
 .watermark.left {
-  left: 4rem;
+  left: -2%;
   font-size: 7rem;
 }
 
 .watermark.right {
-  font-size: 7rem;
-  top: 65%;
-  transform: translateY(-50%) rotate(0deg);
-  right: 12rem;
+  font-size: 5rem;
+  top: 50%;
+  right: 12%;
+  transform: translateY(-20%) rotate(0deg);
 }
 
 /*****style-background Video*/

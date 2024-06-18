@@ -21,7 +21,7 @@ import 'swiper/css/navigation';
 
 export const Slider = ({ isVideoOpen }) => {
   return (
-    // <div className={`slider__container ${isVideoOpen?'videoOpen':''}`}>
+    <div className={`slider__container ${isVideoOpen?'videoOpen':''}`}>
     <Swiper
       className={` swiper slider__container ${isVideoOpen ? 'videoOpen' : ''}`}
       direction={'vertical'}
@@ -65,7 +65,7 @@ export const Slider = ({ isVideoOpen }) => {
       {/* </div> */}
     </Swiper>
 
-    // </div>
+     </div>
   );
 };
 
