@@ -1,12 +1,11 @@
 //Parent:
 
-import React, { useState } from 'react';
+import React from 'react';
 
 import FrameNavigation from '../frameNavigation/FrameNavigation';
 import VideoClip from '../videoClip/VideoClip';
 
 function Content({ isVideoOpen, setIsVideoOpen }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleClick = () => {
     setIsVideoOpen((prev) => !prev);

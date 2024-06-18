@@ -19,16 +19,15 @@ import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 // import 'swiper/css/controller';
 
-export const Slider = ({isVideoOpen}) => {
+export const Slider = ({ isVideoOpen }) => {
   return (
     // <div className={`slider__container ${isVideoOpen?'videoOpen':''}`}>
     <Swiper
-      className=
-      {` swiper slider__container ${isVideoOpen?'videoOpen':''}`}
+      className={` swiper slider__container ${isVideoOpen ? 'videoOpen' : ''}`}
       direction={'vertical'}
       pagination={{
-         clickable: false,
-         }}
+        clickable: false,
+      }}
       modules={[
         Navigation,
         Pagination,
@@ -64,9 +63,8 @@ export const Slider = ({isVideoOpen}) => {
           </SwiperSlide>
         ))}
       {/* </div> */}
-      <div className="swiper-button-prev"></div>
     </Swiper>
-  
+
     // </div>
   );
 };
