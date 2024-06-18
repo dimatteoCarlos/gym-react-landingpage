@@ -1,0 +1,21 @@
+/*style-header.css*/
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+  z-index: 200 !important;
+  background: transparent;
+
+  /* border:10px solid green; */
+}
+
+header {
+  /* position:sticky; */
+  /* position: absolute; */
+  /* top:6rem;left:10rem;right:10rem; */
+}

@@ -1,0 +1,158 @@
+/*style-socialMedia.css*/
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* [class*='fa'], a{
+  background-color: orange;
+
+} */
+
+/*****socialMedia*****/
+
+.socialMedia {
+  display: flex;
+  gap: 1.5rem;
+  z-index: 100;
+  align-items: center;
+  justify-content: space-around;
+  /* border:10px solid red; */
+}
+
+[class*='icon'] > svg {
+  font-size: 2.5rem;
+
+  background-color: transparent;
+  color: rgb(56, 54, 54);
+  /* border: 1px solid rgb(241, 218, 218); */
+}
+
+.icon_xtwitter > svg {
+  color: black;
+  font-size: 2.2rem;
+}
+
+[class*='icon'] > svg:hover {
+  transform: scale(1.2);
+  border-radius: 20%;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.icon_facebook > svg:hover {
+  color: #0571e6;
+}
+
+.icon_instagram > svg:hover {
+  color: #f15245;
+}
+
+.icon_whatsapp > svg:hover {
+  color: #1ed95f;
+}
+.icon_xtwitter > svg:hover {
+  color: black;
+}
+
+/*permanent colored*/
+/*
+.icon_facebook > svg {
+  color: #0571e6;
+}
+
+.icon_instagram > svg {
+  color: #f15245;
+}
+
+.icon_whatsapp > svg {
+  color: #1ed95f;
+}
+.icon_xtwitter > svg {
+  color: black;
+}
+*/
+/********COLORED************/
+
+.icon_facebook.colored > svg {
+  color: #0571e6;
+}
+
+.icon_instagram.colored > svg {
+  color: #f15245;
+}
+
+.icon_whatsapp.colored > svg {
+  color: #1ed95f;
+}
+.icon_xtwitter.colored > svg {
+  color: black;
+}
+
+/********************/
+/* 
+.facebook > svg {
+  color: #0571e6;
+}
+
+.instagram > svg {
+  color: #f15245;
+}
+
+.whatsapp > svg {
+  color: #1ed95f;
+}
+.xtwitter > svg {
+  color: black;
+} */
+
+/* 
+.twitter {
+  color: #1d9bf0;
+  z-index: 1;
+  background-color: transparent;
+}
+.telegram {
+  color: #0a88c7;
+  z-index: 1;
+  background-color: transparent;
+} */
+
+/*
+ .globe {
+  color: #1ed95f;
+}
+
+.youtube {
+  color: #e21;
+}
+.discord {
+  color: #404eed;
+} */
+
+/*****socialMedia*****/
+
+@media all and (max-width: 490px) {
+  .socialMedia {
+    gap: 0.5rem;
+    flex: 1 1 auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .icon_xtwitter,
+  .icon_xtwitter > svg {
+    /* display: none; */
+  }
+}
+
+@media all and (max-width: 385px) {
+  .icon_instagram {
+    /* display: none; */
+  }
+
+  .socialMedia {
+    justify-content: center;
+  }
+}

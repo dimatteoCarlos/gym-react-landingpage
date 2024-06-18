@@ -1,0 +1,48 @@
+
+/*style-navigation.css*/
+.banner__container__navigation {
+  height: calc(100% - 4rem);
+}
+
+.banner__navigation {
+  background-color: transparent;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(1rem);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 1000;
+}
+
+/*ul frame navigation*/
+.banner__navigation {
+  max-width: 11rem;
+  flex: 0.1;
+  min-width: max-content;
+  gap: 1.25rem;
+  width: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+
+  border: 10px solid brown;
+}
+
+.banner__navigation.active {
+  visibility: visible;
+  opacity: 1;
+  width: 20rem;
+}
+
+.banner__navigation li a {
+  text-decoration: none;
+  color: var(--primary--color);
+  text-transform: uppercase;
+  transition: width 0.75s ease;
+}
+
+.banner__navigation li a:hover {
+  color: #8d20fa;
+}
