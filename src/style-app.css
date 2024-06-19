@@ -251,7 +251,7 @@
 .banner__content--text.videoOpen {
   visibility: hidden;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .content--text--title {
@@ -260,6 +260,7 @@
   text-transform: uppercase;
   font-weight: 500;
   text-align: right;
+  transition:0.7s ease;
 }
 
 .content--text--par {

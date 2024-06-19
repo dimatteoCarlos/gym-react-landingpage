@@ -1,0 +1,62 @@
+.form__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.signupForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  scale: 0;
+  transform: translate(-50%, -50%);
+  backdrop-filter: 15px;
+  align-self: center;
+  background-color: rgba(26, 36, 72, 0.2);
+  box-shadow: 0 0 0 25 rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(14, 5, 5, 0.2);
+  max-width: 20rem;
+  width: 60%;
+  max-height: 32rem;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  z-index: 2500;
+  transition: 0.5s;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.signupForm:active,
+.signupForm.active {
+  scale: 1;
+  transition: 0.5s;
+}
+
+.signupForm__title {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.1rem;
+  font-size: 1.1rem;
+}
+input {
+}
+.form__btn {
+}
+.signupform__account {
+}

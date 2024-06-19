@@ -5,9 +5,12 @@ import React from 'react';
 import FrameNavigation from '../frameNavigation/FrameNavigation';
 import VideoClip from '../videoClip/VideoClip';
 
-function Content({ isVideoOpen, setIsVideoOpen }) {
-
-  const handleClick = () => {
+function Content({
+  isVideoOpen,
+  setIsVideoOpen,
+  
+}) {
+  const handleClickSignUp = () => {
     setIsVideoOpen((prev) => !prev);
   };
 
@@ -23,7 +26,11 @@ function Content({ isVideoOpen, setIsVideoOpen }) {
             repudiandae soluta laboriosam natus, iure quam? Amet maxime sint
             impedit modi magni.
           </p>
-          <a href='#' className='content--text--btn' onClick={handleClick}>
+          <a
+            href='#'
+            className='content--text--btn'
+            onClick={handleClickSignUp}
+          >
             {'Join Us'}
           </a>
         </div>
@@ -33,6 +40,7 @@ function Content({ isVideoOpen, setIsVideoOpen }) {
           <VideoClip
             isVideoOpen={isVideoOpen}
             setIsVideoOpen={setIsVideoOpen}
+            //porque ts pidio ...isSignUpOpen
           />
         </div>
       </div>
