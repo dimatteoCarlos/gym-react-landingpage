@@ -1,12 +1,9 @@
 //SocialMedia.tsx
 //Parent: NavBar.tsx, LastPage.tsx
 
-import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { IconType } from 'react-icons';
-
-// import { FaWhatsapp } from 'react-icons/fa';
-
-// import { FaXTwitter } from 'react-icons/fa6';
+import { FaXTwitter } from 'react-icons/fa6';
 
 import './style-socialMedia.css';
 
@@ -19,21 +16,15 @@ type SocialObjType = {
 };
 
 export const socialMediaInfo: SocialObjType[] = [
-  // {
-  //   nameClass: 'whatsapp',
-  //   icon: <FaWhatsapp />,
-  //   iconId: FaWhatsapp,
-  //   iconName: 'FaWhatsapp',
-  //   iconUrl: 'https://wa.me/573204543746',
-  //   // iconUrl: 'https://Whatsapp.com',
-  // },
   {
-    nameClass: 'youtube',
-    icon: <FaYoutube />,
-    iconId: FaYoutube,
-    iconName: 'FaYoutube',
-    iconUrl: 'https://youtube.com',
+    nameClass: 'whatsapp',
+    icon: <FaWhatsapp />,
+    iconId: FaWhatsapp,
+    iconName: 'FaWhatsapp',
+    iconUrl: 'https://wa.me/573204543746',
+    // iconUrl: 'https://Whatsapp.com',
   },
+
   {
     nameClass: 'facebook',
     icon: <FaFacebook />,
@@ -49,15 +40,16 @@ export const socialMediaInfo: SocialObjType[] = [
     // iconUrl:
     //   'https://www.instagram.com/suescaventura/?igsh=MTVvemFneXRsdGJmNw%3D%3D',
     iconUrl:
-      'https://www.instagram.com',
+      'https://www.instagram.com/explore/locations/101373551821898/suescaventura/',
   },
-  // {
-  //   nameClass: 'xtwitter',
-  //   icon: <FaXTwitter />,
-  //   iconId: FaXTwitter,
-  //   iconName: 'FaxTwitter',
-  //   iconUrl: 'https://twitter.com',
-  // },
+
+  {
+    nameClass: 'xtwitter',
+    icon: <FaXTwitter />,
+    iconId: FaXTwitter,
+    iconName: 'FaxTwitter',
+    iconUrl: 'https://twitter.com',
+  },
 ];
 
 type SocialMediaPropType = {
@@ -67,6 +59,11 @@ function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
   return (
     <ul className='socialMedia'>
       {socialMediaInfo.map((item, indx) => {
+        //it depends on the name of the icon, in this case all names start with Fa
+        // const iconClass = `icon_${item.iconId.name
+        //   .substring(2)
+        //   .toLowerCase()} icon`;
+
         const iconClass = `icon_${item.nameClass} icon`;
 
         // console.log('🚀 ~ {socialMediaInfo.map ~ iconClass:', iconClass);

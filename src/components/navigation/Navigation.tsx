@@ -8,7 +8,7 @@ function Navigation({ isMenuOpen }) {
   
   return (
     <>
-      <div className='banner__container__navigation'>
+      <div className={`banner__container__navigation ${isMenuOpen ? 'active' : ''}`}>
         <ul className={` banner__navigation ${isMenuOpen ? 'active' : ''}`}>
           <li>
             <a href='#'>health</a>

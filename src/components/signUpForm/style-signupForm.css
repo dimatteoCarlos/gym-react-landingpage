@@ -1,12 +1,12 @@
 .form__wrapper {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   backdrop-filter: blur(5px);
-  z-index: 2000;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000; */
+  /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
 .signupForm {
@@ -20,8 +20,10 @@
   background-color: rgba(26, 36, 72, 0.2);
   box-shadow: 0 0 0 25 rgba(0, 0, 0, 0.5);
   border: 2px solid rgba(14, 5, 5, 0.2);
-  max-width: 20rem;
-  width: 60%;
+  --formMw: 30rem;
+  --formW: 80%;
+  max-width: var(--formMw);
+  width: var(--formW);
   max-height: 32rem;
   border-radius: 1rem;
   padding: 2rem 2.5rem;
@@ -35,7 +37,7 @@
   justify-content: center;
   align-items: center;
 
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .signupForm:active,
@@ -54,9 +56,60 @@
   margin-bottom: 1.1rem;
   font-size: 1.1rem;
 }
-input {
+
+.signupForm input {
+  width: 100%;
+  padding: 0.5rem 0.625rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: transparent;
 }
+
+.signupForm input::placeholder {
+  color: white;
+}
+
 .form__btn {
+  max-width: calc(var(--formMw));
+
+  width: calc(var(--formW));
+
+  padding: 0.5rem;
+  transform: 0.3s;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+
+  text-transform: uppercase;
+  font-size: 0.8rem;
+
+  margin-bottom: 1rem;
 }
+
+.form__btn:hover {
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+.form__btn:active {
+  scale: 0.9;
+}
+
 .signupform__account {
+  font-size: 1rem;
+  color:white;
+  width: auto;
+  margin-top: 1rem;
+  text-align: center;
 }
+
+.signupform__account> span >a{
+  color: var(--primary--color);
+  color:darkorange;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+

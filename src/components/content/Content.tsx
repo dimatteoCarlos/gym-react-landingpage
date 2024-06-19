@@ -8,10 +8,12 @@ import VideoClip from '../videoClip/VideoClip';
 function Content({
   isVideoOpen,
   setIsVideoOpen,
-  
+  setIsSignUpOpen,
+  isSignUpOpen,
 }) {
   const handleClickSignUp = () => {
     setIsVideoOpen((prev) => !prev);
+    setIsSignUpOpen(true);
   };
 
   return (
@@ -22,9 +24,8 @@ function Content({
         >
           <h2 className='content--text--title'>Start Shinning</h2>
           <p className='content--text--par'>
-            Lorem ipsum Ipsa societas est societas felicissima. Odit animi
-            repudiandae soluta laboriosam natus, iure quam? Amet maxime sint
-            impedit modi magni.
+             
+          Ego amare uxorem meam et liberos meos. Laetus sum et plenam vitam habeo.Lorem ipsum Ipsa et societas est societas felicissima. 
           </p>
           <a
             href='#'
@@ -36,11 +37,12 @@ function Content({
         </div>
 
         <div className='banner__content--frame-video'>
-          <FrameNavigation />
+          {!isSignUpOpen && <FrameNavigation />}
+
           <VideoClip
             isVideoOpen={isVideoOpen}
             setIsVideoOpen={setIsVideoOpen}
-            //porque ts pidio ...isSignUpOpen
+            setIsSignUpOpen={setIsSignUpOpen}
           />
         </div>
       </div>

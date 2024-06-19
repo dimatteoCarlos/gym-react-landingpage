@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 // import './style-banner.css';
 import Navigation from '../../components/navigation/Navigation';
 import Header from '../../components/header/Header';
@@ -7,6 +8,7 @@ import Content from '../../components/content/Content';
 import Watermark from '../../components/watermark/Watermark';
 import VideoHero from '../../components/videoHero/VideoHero';
 import SignUpForm from '../../components/signUpForm/SignUpForm';
+import SocialMedia from '../../social-media/SocialMedia';
 
 const initialCredentials = {
   username: undefined,
@@ -18,7 +20,7 @@ function Banner() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [credentials, setCredentials] = useState(initialCredentials);
-  const [isSignUpOpen, setIsSignUpOpen] = useState(true); //false
+  const [isSignUpOpen, setIsSignUpOpen] = useState(false); 
 
   return (
     <div className='banner'>
@@ -26,13 +28,19 @@ function Banner() {
       <div className='banner__layout'>
         <Header setIsMenuOpen={setIsMenuOpen} />
         <Navigation isMenuOpen={isMenuOpen} />
+        {!isVideoOpen &&
+        <div className="socialMedia__container">
+        <SocialMedia isColored={false} />
+        </div>
+         }
 
         <div className='banner__layout__content'>
           <Slider isVideoOpen={isVideoOpen} />
           <Content
             isVideoOpen={isVideoOpen}
             setIsVideoOpen={setIsVideoOpen}
-           
+            setIsSignUpOpen={setIsSignUpOpen}
+            isSignUpOpen={isSignUpOpen}
           />
           <Watermark text='fitness' className='left' />
           <Watermark text='life style' className='right' />
@@ -40,10 +48,11 @@ function Banner() {
 
         {isSignUpOpen && (
           <SignUpForm
-          credentials={credentials}
-          setCredentials={setCredentials}
-          isSignUpOpen={isSignUpOpen}
-          setIsSignUpOpen={setIsSignUpOpen}
+            credentials={credentials}
+            setCredentials={setCredentials}
+            isSignUpOpen={isSignUpOpen}
+            setIsSignUpOpen={setIsSignUpOpen}
+            setIsVideoOpen={setIsVideoOpen}
           />
         )}
       </div>
