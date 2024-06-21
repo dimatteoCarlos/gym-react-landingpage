@@ -1,8 +1,10 @@
 import { LayoutGridIcon, Search } from 'lucide-react';
-
 import './style-navbar.css';
 
-function Navbar({ setIsMenuOpen }) {
+type NavbarPropType = {
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+function Navbar({ setIsMenuOpen }: NavbarPropType) {
   const handleClickNavMenu = () => {
     console.log('clicked on nav menu');
     setIsMenuOpen((prev) => !prev);

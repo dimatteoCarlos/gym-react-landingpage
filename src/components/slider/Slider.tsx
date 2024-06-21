@@ -1,4 +1,3 @@
-import React from 'react';
 
 //Parent:Banner.tsx
 // import './style-slider.css'
