@@ -69,9 +69,6 @@ function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
       {socialMediaInfo.map((item, indx) => {
         const iconClass = `icon_${item.nameClass} icon`;
 
-        // console.log('🚀 ~ {socialMediaInfo.map ~ iconClass:', iconClass);
-        // console.log(iconClass, item.iconId.name, item.iconId);
-
         return (
           <li key={`${item.iconId.name}--${indx}`}>
             <a

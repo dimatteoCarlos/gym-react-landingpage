@@ -1,6 +1,9 @@
 import React from 'react';
 
-function VideoHero({ isVideoOpen }) {
+type VideoHeroPropType={
+  isVideoOpen:boolean;
+}
+function VideoHero({ isVideoOpen }:VideoHeroPropType) {
   return (
     <>
       <video

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-
 // import './style-banner.css';
+import { useState } from 'react';
 import Navigation from '../../components/navigation/Navigation';
 import Header from '../../components/header/Header';
 import Slider from '../../components/slider/Slider';
@@ -10,6 +9,11 @@ import VideoHero from '../../components/videoHero/VideoHero';
 import SignUpForm from '../../components/signUpForm/SignUpForm';
 import SocialMedia from '../../social-media/SocialMedia';
 
+export type CredentialsType = {
+  username: string | undefined;
+  email: string | undefined;
+  password: string | undefined;
+};
 const initialCredentials = {
   username: undefined,
   email: undefined,
@@ -20,19 +24,19 @@ function Banner() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [credentials, setCredentials] = useState(initialCredentials);
-  const [isSignUpOpen, setIsSignUpOpen] = useState(false); 
+  const [isSignUpOpen, setIsSignUpOpen] = useState<boolean>(false);
 
   return (
     <div className='banner'>
       <VideoHero isVideoOpen={isVideoOpen} />
       <div className='banner__layout'>
         <Header setIsMenuOpen={setIsMenuOpen} />
-        <Navigation isMenuOpen={isMenuOpen} isVideoOpen={isVideoOpen}/>
-        {!isVideoOpen &&
-        <div className="socialMedia__container">
-        <SocialMedia isColored={false} />
-        </div>
-         }
+        <Navigation isMenuOpen={isMenuOpen} isVideoOpen={isVideoOpen} />
+        {!isVideoOpen && (
+          <div className='socialMedia__container'>
+            <SocialMedia isColored={false} />
+          </div>
+        )}
 
         <div className='banner__layout__content'>
           <Slider isVideoOpen={isVideoOpen} />
@@ -48,7 +52,7 @@ function Banner() {
 
         {isSignUpOpen && (
           <SignUpForm
-            credentials={credentials}
+            credentials={credentials} //needed when validation
             setCredentials={setCredentials}
             isSignUpOpen={isSignUpOpen}
             setIsSignUpOpen={setIsSignUpOpen}

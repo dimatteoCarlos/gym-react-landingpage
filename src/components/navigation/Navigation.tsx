@@ -1,10 +1,13 @@
-import React from 'react';
-
 //Parent: Banner.tsx
 
 // import './style-navigation.css';
 
-function Navigation({ isMenuOpen, isVideoOpen }) {
+type NavigationPropType={
+  isVideoOpen:boolean;
+  isMenuOpen:boolean;
+}
+
+function Navigation({ isMenuOpen, isVideoOpen }:NavigationPropType) {
   
   return (
     <>

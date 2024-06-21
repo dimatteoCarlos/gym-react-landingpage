@@ -1,4 +1,3 @@
-import React from 'react';
 //Navigation.tsx
 //Parent:ModalNavigation.tsx
 

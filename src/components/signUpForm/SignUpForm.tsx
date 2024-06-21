@@ -1,13 +1,29 @@
 import React from 'react';
 import './style-signupForm.css';
 
+import { CredentialsType } from '../../page/banner/Banner.tsx';
+
+type SignUpFormPropType = {
+  credentials?: CredentialsType;
+  isSignUpOpen: boolean;
+  setIsSignUpOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsVideoOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setCredentials: React.Dispatch<
+    React.SetStateAction<{
+      username: undefined;
+      email: undefined;
+      password: undefined;
+    }>
+  >;
+};
+
 function SignUpForm({
-  credentials,
+  // credentials,
   setCredentials,
   setIsSignUpOpen,
   isSignUpOpen,
   setIsVideoOpen,
-}) {
+}: SignUpFormPropType) {
   const inputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     setCredentials((prevState) => ({
@@ -17,7 +33,7 @@ function SignUpForm({
   };
 
   function submitFormHandler() {
-    //where and when to verify the password confirmation
+    //write here code to verify the password confirmation and validation
     //dispatch the signup actions
 
     console.log('a Sign-up form was submitted succesfully');

@@ -3,7 +3,11 @@
 
 import Navbar from "../navbar/Navbar";
 import './style-header.css';
-function Header({setIsMenuOpen}) {
+type HeaderPropType={
+  setIsMenuOpen:React.Dispatch<React.SetStateAction<boolean>>
+}
+
+function Header({setIsMenuOpen}:HeaderPropType) {
   return (
     <header >
   <    Navbar setIsMenuOpen={setIsMenuOpen}/>

@@ -1,7 +1,17 @@
 import { CirclePlayIcon, CircleXIcon, CirclePause } from 'lucide-react';
 
-function VideoClip({ isVideoOpen, setIsVideoOpen, setIsSignUpOpen }) {
-  
+type VideoClipPropType = {
+  isVideoOpen: boolean;
+  setIsVideoOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsSignUpOpen: React.Dispatch<boolean>;
+  // setIsSignUpOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+function VideoClip({
+  isVideoOpen,
+  setIsVideoOpen,
+  setIsSignUpOpen,
+}: VideoClipPropType) {
   function handlePlayVideo() {
     setIsVideoOpen((prev) => !prev);
     setIsSignUpOpen(false);
@@ -24,8 +34,8 @@ function VideoClip({ isVideoOpen, setIsVideoOpen, setIsSignUpOpen }) {
           onClick={handlePlayVideo}
         >
           <CirclePlayIcon className='play_icon open' />
-          {/* <CirclePause className='play_icon close' /> */}
           <CircleXIcon className='play_icon close' />
+          {/* <CirclePause className='play_icon close' /> */}
         </a>
       </div>
     </>

@@ -1,6 +1,7 @@
 // import './style-watermark.css'
 
-function Watermark({ text, className}) {
+type WatermarkPropType={text:string; className:string;}
+function Watermark({ text, className}:WatermarkPropType) {
 
   return (
     <>
