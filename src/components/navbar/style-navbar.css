@@ -16,10 +16,9 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: nowrap;
-
   align-items: center;
   /* width: 100%; */
-  padding-right: 0.5rem;
+
   /* border:10px solid red; */
 }
 
@@ -29,6 +28,7 @@ nav {
   vertical-align: middle;
   cursor: pointer;
   color: white;
+
 }
 
 .logo__container,
@@ -68,7 +68,6 @@ nav {
 }
 
 .search__container {
-  /* flex: 0.2 1 1 auto; */
   max-width: 30rem;
   min-width: max-content;
 

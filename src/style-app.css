@@ -591,8 +591,7 @@ visibility:hidden;
     /* border:10px solid; */
   }
 
- 
- .videoclip {
+  .videoclip {
     width: 85%;
     /* --maxH: 11rem; */
     /* border:10px solid red; */
@@ -600,14 +599,12 @@ visibility:hidden;
   }
 
   .videoclip__playBtn .play_icon {
-
     width: var(--maxH, 2rem);
     height: var(--maxH, 2rem);
   }
 }
 
 @media screen and (max-width: 880px) {
-
   /*******header*********/
   .banner__layout header {
     margin: 0;
@@ -651,6 +648,10 @@ visibility:hidden;
 
   .logo__container a .icon {
     height: auto;
+  }
+
+  .SearchIcon {
+    margin-right: 0.5rem;
   }
 
   /*****banner layout content****/
