@@ -1,4 +1,4 @@
-import { CirclePlayIcon, CircleXIcon, CirclePause } from 'lucide-react';
+import { CirclePlayIcon, CircleXIcon } from 'lucide-react';
 
 type VideoClipPropType = {
   isVideoOpen: boolean;
