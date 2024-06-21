@@ -1,6 +1,6 @@
 :root {
   --fsz-header: 1rem;
-  --maxW--menu:10rem;
+  --maxW--menu: 10rem;
 }
 
 .header__navbar {
@@ -18,12 +18,13 @@ nav {
   flex-wrap: nowrap;
 
   align-items: center;
-  width: 98%;
+  /* width: 100%; */
+  padding-right: 0.5rem;
   /* border:10px solid red; */
 }
 
 .icon {
-  height: var(--fsz-header);
+  /* height: var(--fsz-header); */
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -48,7 +49,7 @@ nav {
 .logo__container {
   min-width: max-content;
   max-width: 10rem;
-  max-width: var(--maxW--menu); 
+  max-width: var(--maxW--menu);
   flex: 0.2 1 auto;
 }
 
@@ -67,9 +68,10 @@ nav {
 }
 
 .search__container {
-  flex: 0.2 1 1 auto;
+  /* flex: 0.2 1 1 auto; */
   max-width: 30rem;
   min-width: max-content;
+
   /* border:10px solid red; */
 }
 

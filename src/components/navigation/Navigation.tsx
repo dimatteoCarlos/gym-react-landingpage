@@ -4,12 +4,12 @@ import React from 'react';
 
 // import './style-navigation.css';
 
-function Navigation({ isMenuOpen }) {
+function Navigation({ isMenuOpen, isVideoOpen }) {
   
   return (
     <>
       <div className={`banner__container__navigation ${isMenuOpen ? 'active' : ''}`}>
-        <ul className={` banner__navigation ${isMenuOpen ? 'active' : ''}`}>
+        <ul className={` banner__navigation ${isMenuOpen ? 'active' : '' } ${isVideoOpen ? 'videoOpen' : '' }`}>
           <li>
             <a href='#'>health</a>
           </li>

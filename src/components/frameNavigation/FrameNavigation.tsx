@@ -10,11 +10,11 @@ function FrameNavigation() {
       <div className='frame__container'>
         <div className='frame__services'>
           <h3 className='frame__services--title'>health</h3>
-          <div className='frame__services--par'>sanus sum.</div>
+          <div className='frame__services--par'>sanus sum</div>
         </div>
         <div className='frame__services'>
           <h3 className='frame__services--title'>fitness</h3>
-          <div className='frame__services--par'>Sum figura bona. Ego proposita consequi.</div>
+          <div className='frame__services--par'>Sum figura bona</div>
         </div>
         <div className='frame__services'>
           <h3 className='frame__services--title'>workout</h3>

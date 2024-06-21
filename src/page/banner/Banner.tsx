@@ -27,7 +27,7 @@ function Banner() {
       <VideoHero isVideoOpen={isVideoOpen} />
       <div className='banner__layout'>
         <Header setIsMenuOpen={setIsMenuOpen} />
-        <Navigation isMenuOpen={isMenuOpen} />
+        <Navigation isMenuOpen={isMenuOpen} isVideoOpen={isVideoOpen}/>
         {!isVideoOpen &&
         <div className="socialMedia__container">
         <SocialMedia isColored={false} />

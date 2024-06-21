@@ -36,16 +36,17 @@ function Content({
             {'Join Us'}
           </a>
         </div>
-
+        {!isSignUpOpen && 
         <div className='banner__content--frame-video'>
           {!isSignUpOpen && <FrameNavigation />}
-
+{
           <VideoClip
             isVideoOpen={isVideoOpen}
             setIsVideoOpen={setIsVideoOpen}
             setIsSignUpOpen={setIsSignUpOpen}
-          />
+          />}
         </div>
+}
       </div>
     </>
   );

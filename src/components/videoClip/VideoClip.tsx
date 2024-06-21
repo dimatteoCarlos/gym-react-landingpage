@@ -1,5 +1,4 @@
 import { CirclePlayIcon, CircleXIcon, CirclePause } from 'lucide-react';
-import React, { useState } from 'react';
 
 function VideoClip({ isVideoOpen, setIsVideoOpen, setIsSignUpOpen }) {
   
