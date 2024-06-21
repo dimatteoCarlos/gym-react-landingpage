@@ -2,6 +2,7 @@ import React from 'react';
 import './style-signupForm.css';
 
 import { CredentialsType } from '../../page/banner/Banner.tsx';
+import { CircleXIcon } from 'lucide-react';
 
 type SignUpFormPropType = {
   credentials?: CredentialsType;
@@ -42,10 +43,19 @@ function SignUpForm({
     setIsVideoOpen(false);
   }
 
+  function handleCloseForm() {
+    setIsSignUpOpen(false);
+    setIsVideoOpen(false);
+  }
+
   return (
     <>
       <div className='form__wrapper'>
         <form className={`signupForm ${isSignUpOpen ? 'active' : ''}`}>
+          <a href='' onClick={handleCloseForm} className='closeForm'>
+            <CircleXIcon className='closeIcon' />
+          </a>
+
           <h2 className='signupForm__title'>Ready to Join Us</h2>
           <input
             type='text'

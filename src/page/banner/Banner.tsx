@@ -26,6 +26,7 @@ function Banner() {
   const [credentials, setCredentials] = useState(initialCredentials);
   const [isSignUpOpen, setIsSignUpOpen] = useState<boolean>(false);
 
+
   return (
     <div className='banner'>
       <VideoHero isVideoOpen={isVideoOpen} />

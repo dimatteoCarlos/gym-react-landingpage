@@ -32,6 +32,32 @@
   transition: 0.5s;
 }
 
+.signupForm::after {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  content: '';
+  position: relative;
+}
+
+.signupForm a.closeForm .closeIcon {
+  color: white;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+.signupForm a.closeForm .closeIcon:hover {
+  transform: rotate(-365deg);
+  color: tomato;
+  color: cyan;
+  transition: 0.5s;
+}
+
+.signupForm a.closeForm .closeIcon:active {
+  color: var(--primary--color);
+}
+
 .signupForm {
   display: flex;
   flex-direction: column;
@@ -99,16 +125,15 @@
 
 .signupform__account {
   font-size: 1rem;
-  color:white;
+  color: white;
   width: auto;
   margin-top: 1rem;
   text-align: center;
 }
 
-.signupform__account> span >a{
+.signupform__account > span > a {
   color: var(--primary--color);
-  color:darkorange;
+  color: darkorange;
   font-weight: bold;
   letter-spacing: 1px;
 }
-
