@@ -14,7 +14,7 @@
   top: 50%;
   left: 50%;
   scale: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   backdrop-filter: 15px;
   align-self: center;
   background-color: rgba(26, 36, 72, 0.2);
@@ -27,6 +27,7 @@
   max-height: 32rem;
   border-radius: 1rem;
   padding: 2rem 2.5rem;
+  margin-top: 4rem;
   z-index: 2500;
   transition: 0.5s;
 }
@@ -36,7 +37,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   gap: 1.1rem;
 }
 
@@ -75,7 +75,6 @@
 
 .form__btn {
   max-width: calc(var(--formMw));
-
   width: calc(var(--formW));
 
   padding: 0.5rem;

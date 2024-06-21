@@ -27,8 +27,6 @@ function Navbar({ setIsMenuOpen }) {
           <input type='text' placeholder='Search' />
           <Search className='SearchIcon icon' />
         </div>
-
-        {/* <SocialMedia isColored={false} /> */}
       </nav>
     </>
   );

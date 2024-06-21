@@ -25,7 +25,8 @@ function Content({
           <h2 className='content--text--title'>Start Shinning</h2>
           <p className='content--text--par'>
              
-          Ego amare uxorem meam et liberos meos. Laetus sum et plenam vitam habeo.Lorem ipsum Ipsa et societas est societas felicissima. 
+          Ego amare uxorem meam et liberos meos. Laetus sum et plenam vitam habeo.Lorem ipsum Ipsa et societas est societas felicissima. Ego proposita consequi et excedere. ego sum abundans.
+
           </p>
           <a
             href='#'
