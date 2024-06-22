@@ -74,22 +74,21 @@ header {
 
 /*style-navigation.css*/
 .banner__container__navigation {
-  --top: 3.3rem;
+  --top: 3.6rem;
   position: absolute;
   top: var(--top);
   height: calc(100% - var(--top));
 
-  background-color: rgba(0, 0, 0, 0.26);
+  /* background-color: rgba(0, 0, 0, 0.26); */
+  background-color: transparent;
   box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5rem);
+  backdrop-filter: blur(10px);
   z-index: 1000;
 
   /* visibility: hidden; */
   width: 0%;
   max-width: var(--maxW--menu);
   transition: 0.5s;
-
-  /* border: 1px solid rgb(255, 116, 47); */
 }
 
 .banner__container__navigation.active {
@@ -652,6 +651,26 @@ visibility:hidden;
 
   .SearchIcon {
     margin-right: 0.5rem;
+  }
+
+  /*style-navigation-menu*/
+  .banner__container__navigation.active {
+    visibility: visible;
+    width: 82%;
+    max-width: 82%;
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+
+    background-color: rgba(210, 214, 251, 0.6);
+    backdrop-filter: blur(7px);
+  }
+
+  .banner__content--text {
+    opacity: 0.3;
   }
 
   /*****banner layout content****/
