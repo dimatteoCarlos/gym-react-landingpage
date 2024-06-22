@@ -95,6 +95,7 @@ header {
   visibility: visible;
   width: 33%;
   transition: 0.5s;
+  background-color: rgba(214,210,251,0.7);
 }
 
 .banner__navigation {
