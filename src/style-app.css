@@ -666,13 +666,14 @@ visibility:hidden;
     font-weight: bold;
     align-items: center;
 
-    background-color: rgba(210, 214, 251, 0.6);
+    background-color: rgba(210, 214, 251, 0.8);
     backdrop-filter: blur(7px);
   }
-
-  .banner__content--text {
+  
+  /* .banner__container__navigation.active */
+  /* .banner__content--text {
     opacity: 0.3;
-  }
+  } */
 
   /*****banner layout content****/
   .banner__layout__content {
