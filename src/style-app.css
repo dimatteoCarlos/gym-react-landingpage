@@ -739,6 +739,7 @@ visibility:hidden;
     justify-content: space-evenly;
     gap: 0.5rem;
     padding-bottom: 1rem;
+    padding:1rem 0;
 
     /* border: 10px solid brown; */
   }
@@ -755,6 +756,10 @@ visibility:hidden;
 
   .banner__content--text p {
     text-align: center;
+  }
+  .banner__content--text .btn {
+    text-align: center;
+    margin-bottom:1rem; /*check*/
   }
 
   .banner__content--frame-video {
@@ -775,7 +780,7 @@ visibility:hidden;
   }
 
   .videoclip {
-    --maxH: 9rem;
+    --maxH: 8rem;
     /* border:10px solid pink; */
     width: 85%;
     max-height: var(--maxH);
@@ -813,7 +818,7 @@ visibility:hidden;
 }
 
 /**********************/
-@media screen and ((max-height: 675px)) {
+@media screen and ((max-height: 65px)) {
   .banner__content--text {
     gap: 0.5rem;
     height: auto;
