@@ -1,4 +1,4 @@
-//Parent:
+//Parent:Banner.tsx
 
 import React from 'react';
 import FrameNavigation from '../frameNavigation/FrameNavigation';

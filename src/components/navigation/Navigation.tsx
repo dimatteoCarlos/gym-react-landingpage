@@ -1,5 +1,4 @@
 //Parent: Banner.tsx
-
 // import './style-navigation.css';
 
 type NavigationPropType={
