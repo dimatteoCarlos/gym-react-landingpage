@@ -605,7 +605,7 @@ visibility:hidden;
 }
 
 /**********************/
-@media screen and (max-width: 851px) and (min-height:451px) {
+@media screen and (max-width: 851px) and (min-height:500px) {
   /*******header*********/
   .banner__layout header {
     margin: 0;
@@ -815,7 +815,7 @@ visibility:hidden;
 }
 
 /**********************/
-@media screen and ((max-height: 450px) and (min-width:450px)) {
+@media screen and ((max-height:499px) and (min-width:450px)) {
   .banner__content--text {
     gap: 0.5rem;
     height: auto;
