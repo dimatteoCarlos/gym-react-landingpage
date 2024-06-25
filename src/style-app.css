@@ -77,7 +77,7 @@ header {
 
 /*style-navigation.css*/
 .banner__container__navigation {
-  --top: 3.6rem;
+  --top: 4.6rem;
   position: absolute;
   top: var(--top);
   height: calc(100% - var(--top));
@@ -198,7 +198,6 @@ header {
   /* position: absolute;
   top: 0;
   left: 0%; */
-
 }
 
 .swiper:active {
@@ -243,13 +242,10 @@ header {
 [class^='swiper-button']:hover {
   color: var(--primary--color);
   /* border: 1px solid var(--primary--color); */
-  
 }
 
 .swiper-button-prev {
   top: calc(var(--top--sliderBtn) - var(--btn--sep) / 2);
-
-
 
   /* top: calc(var(--top--sliderBtn) + var(--btn--sep) / 2); */
 }
@@ -600,7 +596,6 @@ visibility:hidden;
   }
 
   .swiper-button-prev {
-
     left: calc(55% - var(--btn--sep) / 2);
   }
 
@@ -675,7 +670,6 @@ visibility:hidden;
 
   .logo__container a .icon {
     height: auto;
-    
   }
 
   .SearchIcon {
@@ -740,12 +734,13 @@ visibility:hidden;
   }
 
   .watermark.left {
-    left: clamp(-12.5rem, -15.5112rem + 12.7796vw, -10rem);
+    left: calc(clamp(-12.5rem, -15.5112rem + 12.7796vw, -10rem) + 0.5rem) ;
   }
 
   .watermark.right {
-    top: 50%;
+    top: 51%;
     right: 1rem;
+
     /* right: calc(clamp(7.5rem, -13rem + 94.8vw, 32.5rem) + 2rem); */
   }
   /*****banner layout content****/
@@ -912,7 +907,7 @@ visibility:hidden;
   [class^='swiper-button']:hover {
     color: var(--primary--color);
     /* border: 2px solid var(--primary--color); */
-    color:blue;
+    color: blue;
   }
 
   .swiper-button-prev {
@@ -928,42 +923,17 @@ visibility:hidden;
 @media screen and (max-height: 498px) {
   body {
     /* border: 0px solid blue */
-    
   }
 
-  .banner{
+  .banner {
     padding: 0;
-    
   }
-
-
-
 
   .banner__layout__content {
     height: calc(100% - 3.6rem - 2rem);
   }
 
   :root {
-    color: orange;
     font-size: 10px;
   }
-
-
-  .swiper-button-prev {
-    /* top: calc(var(--top--sliderBtn) - var(--btn--sep) / 2); */
-  
-  
-  
-    /* top: calc(var(--top--sliderBtn) + var(--btn--sep) / 2); */
-  }
-  
-  .swiper-button-next {
-    /* top: calc(var(--top--sliderBtn) + var(--btn--sep) / 2); */
-  
-    /* top: calc(var(--top--sliderBtn) - var(--btn--sep) / 2); */
-  }
-
-
-
-
 }
