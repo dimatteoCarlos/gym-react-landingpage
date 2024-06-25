@@ -63,6 +63,10 @@ nav {
   align-items: center;
 }
 
+.logo{
+  font-size: max(1rem, 19px);
+}
+
 .logo__container .menu:active {
   transform: rotateZ(-45deg);
 }
