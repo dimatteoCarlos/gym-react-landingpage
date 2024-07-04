@@ -13,7 +13,8 @@ export const Slider = ({ isVideoOpen }: SliderPropType) => {
   return (
     <div className={`slider__container ${isVideoOpen ? 'videoOpen' : ''}`}>
       <Swiper
-        className={` swiper slider__container ${
+        className={` swiper slider__container1 
+          ${
           isVideoOpen ? 'videoOpen' : ''
         }`}
         direction={'vertical'}

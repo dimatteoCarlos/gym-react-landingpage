@@ -53,6 +53,8 @@ function SignUpForm({
   return (
     <>
       <div className='form__wrapper'>
+        
+
         <form className={`signupForm ${isSignUpOpen ? 'active' : ''}`}>
           <a href='' onClick={handleCloseForm} className='closeForm'>
             <CircleXIcon className='closeIcon' />

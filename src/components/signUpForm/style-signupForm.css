@@ -7,11 +7,12 @@
   backdrop-filter: blur(5px);
   z-index: 2000;
   background-color: rgba(0, 0, 0, 0.17);
+  /* margin-top: 1em; */
 }
 
 .signupForm {
   position: absolute;
-  top: 2%;
+  top: 7%;
   left: 50%;
   scale: 0;
   transform: translate(-50%, -0%);
@@ -20,7 +21,7 @@
   background-color: rgba(26, 36, 72, 0.2);
   box-shadow: 0 0 0 25 rgba(0, 0, 0, 0.5);
   border: 2px solid rgba(14, 5, 5, 0.2);
-  
+
   --formMw: 30rem;
   --formW: 80%;
   max-width: var(--formMw);

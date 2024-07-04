@@ -39,7 +39,7 @@ function Banner() {
           </div>
         )}
 
-        <div className='banner__layout__content'>
+        <main className='banner__layout__content'>
           <Slider isVideoOpen={isVideoOpen} />
           <Content
             isVideoOpen={isVideoOpen}
@@ -49,7 +49,7 @@ function Banner() {
           />
           <Watermark text='fitness' className='left' />
           <Watermark text='life style' className='right' />
-        </div>
+        </main>
 
         {isSignUpOpen && (
           <SignUpForm
